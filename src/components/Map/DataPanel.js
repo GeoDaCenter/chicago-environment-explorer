@@ -367,42 +367,42 @@ const SocialColumnsToChart = [
   },
 ]
 const DemographicColumnsToChart = [
-  // {
-  //   'column':'pct_white',
-  //   'name':'White Population',
-  //   'color':colors.teal,
-  //   'preset':'',
-  // },
-  // {
-  //   'column':'pct_black',
-  //   'name':'Black/African American Population',
-  //   'color':colors.yellow,
-  //   'preset':'',
-  // },
-  // {
-  //   'column':'pct_nativeam',
-  //   'name':'American Indian Population',
-  //   'color':colors.chicagoDarkBlue,
-  //   'preset':'',
-  // },
-  // {
-  //   'column':'pct_asian',
-  //   'name': 'Asian Population',
-  //   'color':colors.purple,
-  //   'preset':'',
-  // },
+  {
+    'column':'pct_white',
+    'name':'White Population',
+    'color':colors.teal,
+    'preset':'',
+  },
+  {
+    'column':'pct_black',
+    'name':'Black/African American Population',
+    'color':colors.yellow,
+    'preset':'',
+  },
+  {
+    'column':'pct_nativeam',
+    'name':'American Indian Population',
+    'color':colors.chicagoDarkBlue,
+    'preset':'',
+  },
+  {
+    'column':'pct_asian',
+    'name': 'Asian Population',
+    'color':colors.purple,
+    'preset':'',
+  },
   // {
   //   'column':'hispP',
   //   'name': 'Hispanic Population',
   //   'color':colors.black,
   //   'preset':'',
   // },
-  // {
-  //   'column':'pct_other',
-  //   'name': 'Other Population',
-  //   'color':colors.blue,
-  //   'preset':'',
-  // },
+  {
+    'column':'pct_other',
+    'name': 'Other Population',
+    'color':colors.blue,
+    'preset':'',
+  },
   {
     'column':'percentage_children',
     'name': 'Children Population (<18 years)',

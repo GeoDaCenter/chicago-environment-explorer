@@ -29,6 +29,11 @@ export const INITIAL_STATE = {
     "ndvi",
     "simpson",
     "topline_median",
+    "pct_white",
+    "pct_black",
+    "pct_nativeam",
+    "pct_asian",
+    "pct_other",
     "percentage_children",
     "percentage_seniors"
   ],
