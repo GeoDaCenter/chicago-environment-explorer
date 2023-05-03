@@ -366,6 +366,56 @@ const SocialColumnsToChart = [
     'preset':'',
   },
 ]
+const DemographicColumnsToChart = [
+  {
+    'column':'whiteP',
+    'name':'White Population',
+    'color':colors.teal,
+    'preset':'',
+  },
+  {
+    'column':'blackP',
+    'name':'Black/African American Population',
+    'color':colors.yellow,
+    'preset':'',
+  },
+  {
+    'column':'amIndP',
+    'name':'American Indian Population',
+    'color':colors.chicagoDarkBlue,
+    'preset':'',
+  },
+  {
+    'column':'asianP',
+    'name': 'Asian Population',
+    'color':colors.purple,
+    'preset':'',
+  },
+  {
+    'column':'hispP',
+    'name': 'Hispanic Population',
+    'color':colors.black,
+    'preset':'',
+  },
+  {
+    'column':'otherP',
+    'name': 'Other Population',
+    'color':colors.blue,
+    'preset':'',
+  },
+  {
+    'column':'percentage_children',
+    'name': 'Children Population (<18 years)',
+    'color':colors.buttongray,
+    'preset':'',
+  },
+  {
+    'column':'percentage_seniors',
+    'name': 'Senior Population (>65 years)',
+    'color':colors.darkgray,
+    'preset':'',
+  },
+]
 
 // DataPanel Function Component
 const DataPanel = () => {
@@ -406,6 +456,21 @@ const DataPanel = () => {
                 <p style={{padding:0}}>
                   These charts show the distribution of variables in the tracts on your screen. Click to filter the map.
                 </p>
+                <Gutter height="1em" />                
+                <h3 className="sectionHeader">Demographic</h3>
+                {
+                  DemographicColumnsToChart.map(({name, column, color}, i) => 
+                    <Histogram 
+                      name={name} 
+                      column={column}
+                      histCounts={selectionData.histCounts[column]} 
+                      density={selectionData.densities[column]} 
+                      range={ranges[column]} 
+                      color={color}
+                      key={`distribution-${i}`}
+                    />
+                  )
+                }
                 <Gutter height="1em" />                
                 <h3 className="sectionHeader">Environmental</h3>
                 {
