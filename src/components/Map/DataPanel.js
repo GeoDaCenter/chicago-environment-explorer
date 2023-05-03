@@ -368,37 +368,37 @@ const SocialColumnsToChart = [
 ]
 const DemographicColumnsToChart = [
   {
-    'column':'whiteP',
+    'column':'pct_white',
     'name':'White Population',
     'color':colors.teal,
     'preset':'',
   },
   {
-    'column':'blackP',
+    'column':'pct_black',
     'name':'Black/African American Population',
     'color':colors.yellow,
     'preset':'',
   },
   {
-    'column':'amIndP',
+    'column':'pct_nativeam',
     'name':'American Indian Population',
     'color':colors.chicagoDarkBlue,
     'preset':'',
   },
   {
-    'column':'asianP',
+    'column':'pct_asian',
     'name': 'Asian Population',
     'color':colors.purple,
     'preset':'',
   },
+  // {
+  //   'column':'hispP',
+  //   'name': 'Hispanic Population',
+  //   'color':colors.black,
+  //   'preset':'',
+  // },
   {
-    'column':'hispP',
-    'name': 'Hispanic Population',
-    'color':colors.black,
-    'preset':'',
-  },
-  {
-    'column':'otherP',
+    'column':'pct_other',
     'name': 'Other Population',
     'color':colors.blue,
     'preset':'',
