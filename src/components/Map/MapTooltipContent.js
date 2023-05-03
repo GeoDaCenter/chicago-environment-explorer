@@ -18,7 +18,14 @@ const MapTooltipContent = ({content}) => {
         urban_flood_suscep,
         ndvi,
         simpson,
-        topline_median
+        topline_median,
+        pct_white,
+        pct_black,
+        pct_nativeam,
+        pct_asian,
+        pct_other,
+        percentage_children,
+        percentage_seniors
     } = content;
     const [speciesPlotInfo, setSpeciesPlotInfo] = useState({
         open: false,
@@ -56,6 +63,14 @@ const MapTooltipContent = ({content}) => {
                     <tr><td>Urban Flood Susceptibility Index</td><td> {urban_flood_suscep && urban_flood_suscep.toFixed(2)}</td></tr>
                     <tr><td>Vegetation Index (NDVI)</td><td> {ndvi && ndvi.toFixed(3)}</td></tr>
                     <tr><td>Plant Biodiversity</td><td>{simpson && simpson.toFixed(2)}</td></tr>
+                    <tr><td>Percentage White</td><td>{pct_white && pct_white.toFixed(2)}%</td></tr>
+                    <tr><td>Percentage Black/African American</td><td>{pct_black && pct_black.toFixed(2)}%</td></tr>
+                    <tr><td>Percentage Native American</td><td>{pct_nativeam && pct_nativeam.toFixed(2)}%</td></tr>
+                    <tr><td>Percentage Asian</td><td>{pct_asian && pct_asian.toFixed(2)}%</td></tr>
+                    <tr><td>Percentage Other Race</td><td>{pct_other && pct_other.toFixed(2)}%</td></tr>
+                    <tr><td>Percentage Children</td><td>{percentage_children && percentage_children.toFixed(2)}%</td></tr>
+                    <tr><td>Percentage Seniors</td><td>{percentage_seniors && percentage_seniors.toFixed(2)}%</td></tr>
+                    
                 </tbody>
             </table>
             <Button variant="contained" onClick={handleSpeciesPlot} style={{marginTop:'.5em', fontFamily:'"Lato", sans-serif', background:colors.forest}}>Open Species Tree</Button>
