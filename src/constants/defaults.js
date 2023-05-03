@@ -33,6 +33,7 @@ export const INITIAL_STATE = {
     "pct_black",
     "pct_nativeam",
     "pct_asian",
+    "hispP",
     "pct_other",
     "percentage_children",
     "percentage_seniors"

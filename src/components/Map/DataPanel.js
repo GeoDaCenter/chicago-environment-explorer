@@ -381,7 +381,7 @@ const DemographicColumnsToChart = [
   },
   {
     'column':'pct_nativeam',
-    'name':'American Indian Population',
+    'name':'Native American Population',
     'color':colors.chicagoDarkBlue,
     'preset':'',
   },
@@ -391,12 +391,12 @@ const DemographicColumnsToChart = [
     'color':colors.purple,
     'preset':'',
   },
-  // {
-  //   'column':'hispP',
-  //   'name': 'Hispanic Population',
-  //   'color':colors.black,
-  //   'preset':'',
-  // },
+  {
+    'column':'hispP',
+    'name': 'Hispanic Population',
+    'color':colors.black,
+    'preset':'',
+  },
   {
     'column':'pct_other',
     'name': 'Other Population',
